@@ -22,23 +22,23 @@ export default function Footer() {
               <Link href="/">
                 <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                   <span>
-                    <img
+                    {/* <img
                       src="/img/logo.svg"
                       alt="N"
                       width="32"
                       height="32"
                       className="w-8"
-                    />
+                    /> */}
+        <h3 className="text-blue-500 font-medium">mint<span className="text-gray-400 font-bold"> Chi</span></h3>
+
                   </span>
-                  <span>Nextly</span>
+                  {/* <span>Nextly</span> */}
                 </a>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website
-              template for startups and indie projects. Its built with
-              Next.js & TailwindCSS. And its completely open-source.
+              Mint Chi is an NFT onboarding platform based in Chicago. Our platform aims to make the tokenization process easier for Chicago residents by guiding them through the process of minting their art and assets as Nfts.
             </div>
 
             <div className="mt-5">
@@ -84,28 +84,28 @@ export default function Footer() {
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
-                href="https://twitter.com/web3templates"
+                href="https://twitter.com/notadviceinudao"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Twitter</span>
                 <Twitter />
               </a>
               <a
-                href="https://facebook.com/web3templates"
+                href="#"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Facebook</span>
                 <Facebook />
               </a>
               <a
-                href="https://instagram.com/web3templates"
+                href="#"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="#"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Linkedin</span>
@@ -116,12 +116,12 @@ export default function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
+          Copyright © {new Date().getFullYear()}. Made with ♥ by{""}
           <a
-            href="https://web3templates.com/"
+            href="https://www.linkedin.com/in/osborn-ojure-12677216b/"
             target="_blank"
             rel="noopener">
-            Web3Templates.
+            Osborn Ojure
           </a>{" "}
           Illustrations from{" "}
           <a
@@ -133,7 +133,7 @@ export default function Footer() {
         </div>
       </Container>
       {/* Do not remove this */}
-      <Backlink />
+      {/* <Backlink /> */}
     </div>
   );
 }

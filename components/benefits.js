@@ -19,7 +19,7 @@ export default function Benefits(props) {
               height="482"
               alt="Benefits"
               layout="intrinsic"
-              placeholder="blur"
+              // placeholder="blur" // uncomment to return to png
             />
           </div>
         </div>

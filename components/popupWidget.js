@@ -51,37 +51,26 @@ export default function PopupWidget() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="fixed z-40 flex items-center justify-center transition duration-300 bg-indigo-500 rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-indigo-600 focus:bg-indigo-600 ease">
+            <Disclosure.Button className="flex items-center justify-center transition rounded-md duration-300 bg-blue-500 focus:outline-none  shadow-lg hover:bg-blue-600 focus:bg-blue-600 ease">
+            {/* <Disclosure.Button className="flex items-center justify-center transition duration-300 bg-blue-500 rounded-full shadow-lg w-14 h-14 focus:outline-none hover:bg-blue-600 focus:bg-blue-600 ease"> */}
               <span className="sr-only">Open Contact form Widget</span>
-              <Transition
+               <Transition
                 show={!open}
                 enter="transition duration-200 transform ease"
                 enterFrom="opacity-0 -rotate-45 scale-75"
                 leave="transition duration-100 transform ease"
                 leaveTo="opacity-0 -rotate-45"
-                className="absolute w-6 h-6 text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round">
-                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                </svg>{" "}
+                className="px-8 py-4 text-lg font-medium text-center text-white">
+                  Get Started for Free
               </Transition>
-
+{/*  
               <Transition
                 show={open}
                 enter="transition duration-200 transform ease"
                 enterFrom="opacity-0 rotate-45 scale-75"
                 leave="transition duration-100 transform ease"
                 leaveTo="opacity-0 rotate-45"
-                className="absolute w-6 h-6 text-white">
+                className="px-8 py-4 text-lg font-medium text-center text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -96,7 +85,7 @@ export default function PopupWidget() {
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>{" "}
-              </Transition>
+              </Transition> */}
             </Disclosure.Button>
             <Transition
               className="fixed  z-50 bottom-[100px] top-0 right-0  left-0 sm:top-auto sm:right-5 sm:left-auto"
@@ -105,7 +94,32 @@ export default function PopupWidget() {
               leave="transition duration-200 transform ease"
               leaveTo="opacity-0 translate-y-5">
               <Disclosure.Panel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
-                <div className="flex flex-col items-center justify-center h-32 p-5 bg-indigo-600">
+                <div className="flex flex-col items-center justify-center h-32 p-5 bg-blue-600">
+                    <Disclosure.Button>
+                    <Transition
+                        show={open}
+                        enter="transition duration-200 transform ease"
+                        enterFrom="opacity-0 rotate-45 scale-75"
+                        leave="transition duration-100 transform ease"
+                        leaveTo="opacity-0 rotate-45"
+                        className="px-8 py-4 text-lg font-medium text-center text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-8 h-8Highlight your benefits"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="#ff4d4d"
+                          stroke="#ff4d4d"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round">
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>{" "}
+                      </Transition>
+                    </Disclosure.Button>
+
                   <h3 className="text-lg text-white">How can we help?</h3>
                   <p className="text-white opacity-50">
                     We usually respond in a few hours
@@ -149,7 +163,7 @@ export default function PopupWidget() {
                             required: "Full name is required",
                             maxLength: 80,
                           })}
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
+                          className={`w-full px-3 py-2 dark:text-gray-500 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.name
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
@@ -179,7 +193,7 @@ export default function PopupWidget() {
                             },
                           })}
                           placeholder="you@company.com"
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
+                          className={`w-full px-3 py-2 dark:text-gray-500 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
                             errors.email
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
@@ -207,7 +221,7 @@ export default function PopupWidget() {
                             required: "Enter your Message",
                           })}
                           placeholder="Your Message"
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
+                          className={`w-full px-3 py-2 dark:text-gray-500 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
@@ -222,7 +236,7 @@ export default function PopupWidget() {
                       <div className="mb-3">
                         <button
                           type="submit"
-                          className="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                          className="w-full px-3 py-4 text-white bg-blue-500 rounded-md focus:bg-blue-600 focus:outline-none">
                           {isSubmitting ? (
                             <svg
                               className="w-5 h-5 mx-auto text-white animate-spin"
