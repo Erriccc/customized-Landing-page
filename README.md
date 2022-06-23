@@ -6,7 +6,7 @@
  <br>
 </p>
 
-# MintChi - Landing Page Template with Next.js & Tailwind CSS
+# Customized - Landing Page Template with Next.js & Tailwind CSS
 
  
 <!-- ![image](https://user-images.githubusercontent.com/1884712/121497169-03228680-c990-11eb-975a-e77fddc43de0.png) -->
